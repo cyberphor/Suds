@@ -12,4 +12,5 @@
 . $PSScriptRoot\Suds\New-AdForest.ps1
 . $PSScriptRoot\Suds\New-GpoWallpaper.ps1
 . $PSScriptRoot\Suds\Remove-StaleDnsRecord.ps1
+. $PSScriptRoot\Suds\Start-SystemTrayApp.ps1
 . $PSScriptRoot\Suds\Uninstall-Sysmon.ps1
