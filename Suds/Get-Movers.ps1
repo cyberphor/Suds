@@ -35,3 +35,26 @@ ForEach-Object {
     $Officer | Add-Member -MemberType NoteProperty -Name "Type" -Value $_.Type
     $Officer
 } | Export-Csv "people6.csv"
+
+$Emails = cat .\people5.txt
+cat .\people6.csv |
+ConvertFrom-Csv |
+ForEach-Object {
+    $First = $_.First.ToLower()
+    $Last = $_.Last.ToLower()
+    $Email1 = $Emails | Where-Object { $_ -match $Last }
+    $Email2 = $Email1 | Where-Object { $_ -match $First }
+
+    if ($Email2) {
+        New-Object psobject -Property @{
+            "First" = $_.First; 
+            "Middle" = $_.Middle;
+            "Last" = $_.Last;
+            "Email" = $Email2;
+            "Branch" = $_.Branch;
+            "CONGR" = $_.CONGR;
+            "AOC" = $_.AOC;
+            "Type" = $_.Type;
+        } 
+    } 
+} | Export-Csv "24-01-Movers.csv" -NoTypeInformation
