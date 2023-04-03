@@ -12,6 +12,7 @@
 . $PSScriptRoot\Suds\New-AdDomainAdmin.ps1
 . $PSScriptRoot\Suds\New-AdForest.ps1
 . $PSScriptRoot\Suds\New-GpoWallpaper.ps1
+. $PSScriptRoot\Suds\New-VM.ps1
 . $PSScriptRoot\Suds\Remove-StaleDnsRecord.ps1
 . $PSScriptRoot\Suds\Start-WinFormDataGridView.ps1
 . $PSScriptRoot\Suds\Start-WinFormNotifyIcon.ps1
