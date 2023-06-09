@@ -1,3 +1,4 @@
+. $PSScriptRoot\Suds\Clear-DockerContent.ps1
 . $PSScriptRoot\Suds\ConvertFrom-Base64.ps1
 . $PSScriptRoot\Suds\ConvertTo-Base64.ps1
 . $PSScriptRoot\Suds\ConvertTo-BinaryString.ps1
@@ -15,6 +16,8 @@
 . $PSScriptRoot\Suds\New-GpoWallpaper.ps1
 . $PSScriptRoot\Suds\New-VM.ps1
 . $PSScriptRoot\Suds\Remove-StaleDnsRecord.ps1
+. $PSScriptRoot\Suds\Set-VirtualMemorySize.ps1
+. $PSScriptRoot\Suds\Show-HostsFile.ps1
 . $PSScriptRoot\Suds\Start-WinFormDataGridView.ps1
 . $PSScriptRoot\Suds\Start-WinFormNotifyIcon.ps1
 . $PSScriptRoot\Suds\Uninstall-Sysmon.ps1
