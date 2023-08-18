@@ -16,6 +16,7 @@
 . $PSScriptRoot\Suds\New-GpoWallpaper.ps1
 . $PSScriptRoot\Suds\New-VM.ps1
 . $PSScriptRoot\Suds\Remove-StaleDnsRecord.ps1
+. $PSScriptRoot\Suds\Set-Prompt.ps1
 . $PSScriptRoot\Suds\Set-VirtualMemorySize.ps1
 . $PSScriptRoot\Suds\Show-HostsFile.ps1
 . $PSScriptRoot\Suds\Start-WinFormDataGridView.ps1
